@@ -1,0 +1,1 @@
+console.log("[simulator] placeholder iniciado — MQTT vem na próxima etapa.");

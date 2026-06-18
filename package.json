@@ -1,0 +1,15 @@
+{
+  "name": "energy-monitor",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=apps/backend",
+    "dev:frontend": "npm run dev --workspace=apps/frontend",
+    "dev:simulator": "npm run dev --workspace=apps/simulator",
+    "build": "npm run build --workspaces --if-present",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "engines": { "node": ">=20.0.0" }
+}
